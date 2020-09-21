@@ -1,0 +1,511 @@
+77* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
+html{
+  background-color: rgb(225, 225, 225);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(225, 225, 225);
+  
+}
+
+.m{
+  opacity: 0.6;
+}
+.m:hover{
+  border: 1px solid rgb(225, 225, 225);
+  background-color: rgb(226, 226, 226);
+}
+/* Start the header consist of calculator and iconsclose, minimise, maximise */
+.first{
+  background-color: rgb(225, 225, 225);
+  padding: 0px;
+  font-size: 10px;
+}
+#firstcalculator{
+  margin-left: 0px;
+  padding-left: 6px;
+  font-family: 'Segoe UI';
+}
+
+.center{
+  float: right;
+}
+
+#close:hover{
+  background-color: red;
+}
+.third-block{
+    position: relative;
+    height: 35%;
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+}
+	
+input[type=number] {
+	padding-top: 50px;
+    padding-right: 100px;
+    border: none;
+    width: 100%;
+    float: left;
+    height: 100%;
+    font-family: 'Segoe UI';
+    font-size: 55px;
+    text-align: right;
+    background-color: rgb(225, 225, 225);
+    font: bold;
+}
+
+::-webkit-input-placeholder { 
+    color: black;
+    font: bold;
+}
+input:focus{
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+#close{
+  height: 20px;
+  width: 25px;
+  font-size: 11px;
+}
+
+.minmax:hover{
+  background-color: #ccc;
+}
+
+.menu:hover{
+  background-color: #ccc;
+}
+
+.closeminmaxicon{
+  float: right;
+}
+
+.time{
+  float: right;
+}
+
+.standard{
+  height: 20px;
+  width: 20px;
+  float: left;
+}
+
+.menu{
+  height: 20px;
+  width: 20px;
+  float: left;
+  margin-left: 0px;
+}
+
+#close, .time{
+  padding-right: 5px;
+  margin-left: 3px;
+  margin-bottom: 15px;
+}
+
+.minmax, .time{
+  padding-right: 5px;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 25px;
+  font-size: 14px;
+  
+}
+/* Finish */
+
+.top-cal{
+  height: 10px;
+}
+
+#top-cal {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  float: left;
+  min-width: 0;
+}
+
+#top-cal th {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 6px;
+  margin: 0px;
+  max-width: 0;
+  height: 25px;
+}
+
+#top-cal th:hover {
+  background-color: rgb(218, 218, 218);
+  border: 1px solid rgb(218, 218, 218);
+}
+
+#top-cal th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+}
+
+
+#top-call {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  float: left;
+  min-width: 0;
+}
+
+#top-call th {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 0px;
+  margin: 0px;
+  max-width: 0;
+  font-family: 'Segoe UI';
+  font-size: 13px;
+  font-weight: normal;
+}
+
+
+#top-call th:hover {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+
+
+#top-call th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(225, 225, 225);
+  color: black;
+  text-align: center;
+}
+
+
+
+
+.center{
+  width: 80%;
+  height: 100%;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+#customers td {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 6px;
+  background-color: #f2f2f2;
+  max-width: 0px;
+  height: 25px;
+  
+}
+
+#customers td:hover{
+  background-color: rgb(218, 218, 218);
+ 
+  }
+ 
+#customers .number{
+  background-color: white;
+  }
+
+#customers .blue:hover{
+  background-color: blue;
+  }
+
+.leftbar{
+  background-color: rgb(225, 225, 225);
+}
+
+.right {
+  float: left;
+  width: 29.5%;
+  height: 640px; /* only for demonstration, should be removed */
+  background-color: rgb(225, 225, 225);
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+
+.left {
+  float: left;
+  padding: 0px;
+  width: 70.5%;
+  height: 100%;
+  background-color: rgb(225, 225, 225);
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #f1f1f1;
+}
+.threes:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #f1f1f1;
+}
+
+/*ORANGR*/
+.ones{
+  background-color: rgb(225, 225, 225);
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  }
+  
+.tows input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1 solid rgb(225, 225, 225);
+  background-color: rgb(225, 225, 225);
+  color: black;
+  text-align: right;
+  font-size: 50px;
+}
+.twos{
+  background-color: rgb(225, 225, 225);
+  height: 158px;
+  }
+.threes{
+  background-color: rgb(225, 225, 225);
+  height: 375px;
+}
+.leftbar{
+  width: 20%;
+  height: 100%;
+}
+
+#cust {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  object-fit: cover;
+}
+
+#cust td {
+  border: 0.2px solid rgb(225, 225, 225);
+  padding: 6px;
+  background-color: #f2f2f2;
+  max-width: 0px;
+  height: 25px;
+  
+}
+
+#cust td:hover{
+  background-color: rgb(218, 218, 218);
+ 
+  }
+ 
+#cust .number{
+  background-color: rgb(251, 251, 251);
+  font-weight: 1000;
+  }
+
+.his{
+  font-family: 'Segoe UI';
+  float: left;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+.his:hover{
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+#cust {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  object-fit: cover;
+}
+
+#cust td {
+  border: 0.2px solid rgb(225, 225, 225);
+  padding: 6px;
+  background-color: #f2f2f2;
+  max-width: 0px;
+  height: 25px;
+  
+}
+
+#cust td:hover{
+  background-color: rgb(218, 218, 218);
+ 
+  }
+ 
+#cust .number{
+  background-color: white;
+  font-weight: 1000;
+  }
+
+#cu{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  display: auto;
+}
+
+#cu td, #cu th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#cu th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ddd;
+  color: black;
+  text-align: center;
+}
+
+#cu th:hover {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(218, 218, 218);
+  color: black;
+  text-align: center;
+}
+
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  
+  .left {
+    width: 100%;
+    height: auto;
+  }
+  
+  #top-call {
+    width: 100%
+  }
+  
+  #top-cal{
+    width: 100%;
+  }
+  
+  .threes{
+  background-color: rgb(225, 225, 225);
+  height: 320px;
+  }
+  .center{
+    width: 100%;
+  }
+  .right{
+  display: none;
+  width: 100%;
+  height: auto;
+  }
+  
+  .leftbar{
+  display: none;
+  width: 100%;
+  height: auto;
+  }
+  
+  .ones{
+    height: 30%;
+    }
+  .twos{
+    height: 70%;
+    }
+	  
+	.third-block{
+    position: relative;
+    height: 30%;
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+}
+	
+	input[type=number] {
+		padding-top: 30px;
+		padding-bottom: 29px;
+		padding-right: 100px;
+		border: none;
+		width: 100%;
+		float: left;
+		height: 100%;
+		font-family: 'Segoe UI';
+		font-size: 45px;
+		text-align: right;
+		background-color: rgb(225, 225, 225);
+		font: bold;
+	}
+	#customers {
+	  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  font-weight: 600;
+	}
+
+	#customers td {
+	  border: 1px solid rgb(225, 225, 225);
+	  padding: 6px;
+	  background-color: #f2f2f2;
+	  max-width: 0px;
+	  height: px;
+	}
+	 
+}
+
+@media (min-width: 600px) {
+  .left{
+    height: auto;
+  }
+  
+   #top-cal{
+    display: none;
+  }
+  
+  
+	#mpower{
+	  display: none;
+	}
+  .time{
+    display: none;
+  }
+}

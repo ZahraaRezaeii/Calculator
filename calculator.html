@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Calculator-ZahraRezaei</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body>
+    <!-- first block for <calculator, close, minimize, maximize -->
+    <div class="first">
+      <span id="firstcalculator">Calculator</span>
+      <span class="closeminmaxicon">
+        <span class="minmax">&#8213</span>
+        <span class="minmax">&#9723</span>
+        <span id="close">&#10005</span>
+      </span>
+    </div>
+
+    <!-- main block for calculator -->
+    <div class="main">
+      <!-- left  block -->
+      <div class="left">
+        <div class="ones">
+          <span class="menu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEVHcEwAAACfKoRRAAAAAXRSTlMAQObYZgAAABVJREFUCNdjYCAM+P///wAh6KsOBACTYhHvwO/dOQAAAABJRU5ErkJggg==" style="height: 20px; width: 20px;">
+          </span>
+          <span class="standard">Standard</span>
+          <span class="time"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAA1VBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwim1yAAAARnRSTlMABQKJ0/NUA4gs+RbU2G+kDQxx+tXa/kNQ223XbFHcBnAOVnLx1qKlo9n8y09zh04EREoqammQ+BnSFVMH4VqmqvfgK/QL52oqBAAAAOdJREFUKM+dkuduwyAURj3wjOPsvZPuvXebzvP+j9QEMHaq/sqV4I6DPn0ILGvbeHl7//z4Li/nk3wWrtbzKzrGIwMInTsQi2j285UKcJ0McMz9NFBNMIxxDeDoShXrvRPTNYAwB1afnm2AJBoECf6mZQ2sOpX/QUT5LyjJXMWT2aOqgEBIMmNH9odcK/D0yOChILXPVGuVBDerdMqebOckQUZu13ab2u5kzLDoIaWlLmiNiDv5/LLRPs9ql7iv1S7SBmfmkONCUo9qtWjRpB06Bd1uL3uo1snmrW2/MvC83QPf3vp3/AKgmCDwMHJPzwAAAABJRU5ErkJggg==" style="height: 20px; width: 20px; capacity: 0.6;"></span>
+        </div>
+        <div class="twos">
+          <form class="third-block">
+            <input type="number" id="fname" name="fname" value="0">
+          </form>
+        </div>
+        <div class="top-cal">
+          <table id="top-call">
+            <tr>
+              <th class="m">MC</th>
+              <th class="m">MR</th>
+              <th>M+</th>
+              <th>M−</th>
+              <th>MS</th>
+			  <th id="mpower">M<sup>^</sup></th>
+            </tr>
+          </table> 
+          <table id="top-cal">
+              <tr>
+                <th>%</th>
+                <th>√</th>
+                <th>x<sup style="font-size:13px">2</sup></th>
+                <th><sup>1</sup>/x</th>
+              </tr>
+          </table>
+        </div>
+
+        <div class="threes">
+          <div class="center">
+            
+            <table id="customers">
+              <tr>
+                <td>CE</td>
+                <td>C</td>
+                <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAgVBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6hu2SAAAAKnRSTlMAdZrUFdcfFtPSBee6GRgc5WppWP4P/VL0Mx2l7Lam9TZ2nPYG6DgO0b8M2uFrAAAA4ElEQVRIx+2V2RKCMAxFCyhUwLIoLiDu6/3/DxQYQDpUKeVR7lM6zGGSmzQlZNSoXJGBLvl7r0nYLiS0azI6HLMrES/F/nPScDh2Jx/Dr+P1armQKRioou0GGumFmDecSS/k8cTr2gvJ7DUi7kNoVZEVCpGWvQFoyVgUgQA54XLnfzWZYTqvAtZGRPaWTJsoELG9BSMgcsR0oIucyYqgtC6JQwy4NvnCCAhFRCGxH+Wz2mtZk1mjP3KtZFxPhw+MylgqDL/KFVO5yCrrQmUpya2+OEUybMFKrfHEG5+7v9YbOZQxXslbHKoAAAAASUVORK5CYII=  " style="height: 20px; width: 20px;"></td>
+                <td class="blue">÷</td>
+              </tr>
+              <tr>
+                <td class="number">7</td>
+                <td class="number">8</td>
+                <td class="number">9</td>
+                <td class="blue">×</td>
+              </tr>
+              <tr>
+                <td class="number">4</td>
+                <td class="number">5</td>
+                <td class="number">6</td>
+                <td class="blue">−</td>
+              </tr>
+              <tr>
+                <td class="number">1</td>
+                <td class="number">2</td>
+                <td class="number">3</td>
+                <td class="blue">+</td>
+              </tr>
+              <tr>
+                <td>±</td>
+                <td class="number">0</td>
+                <td>.</td>
+                <td class="blue">=</td>
+              </tr>
+            </table>
+          </div>
+          <div class="leftbar">
+            <table id="cust">
+              <tr>
+                <td>%</td>
+              </tr>
+              <tr>
+                <td>√</td>
+              </tr>
+              <tr>
+                <td>x<sup style="font-size:13px">2</sup></td>
+              </tr>
+              <tr>
+                <td>x<sup style="font-size:13px">3</sup></td>
+              </tr>
+              <tr>
+                <td><sup>1</sup>/x</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="his">History</div>
+        <div class="his">Memory</div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
