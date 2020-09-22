@@ -30,6 +30,7 @@ body {
   background-color: rgb(225, 225, 225);
   padding: 0px;
   font-size: 10px;
+  height: 25px;
 }
 #firstcalculator{
   margin-left: 0px;
@@ -41,11 +42,7 @@ body {
   float: right;
 }
 
-#close:hover{
-  background-color: red;
-}
 .third-block{
-    position: relative;
     height: 35%;
     width: 100%;
     background-color: rgb(225, 225, 225);
@@ -78,20 +75,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
-#close{
-  height: 20px;
-  width: 25px;
-  font-size: 11px;
-}
-
-.minmax:hover{
-  background-color: #ccc;
-}
 
 .menu:hover{
   background-color: #ccc;
 }
-
 .closeminmaxicon{
   float: right;
 }
@@ -104,11 +91,12 @@ input[type=number]::-webkit-outer-spin-button {
   height: 20px;
   width: 20px;
   float: left;
+  margin: 0px;
 }
 
 .menu{
-  height: 20px;
-  width: 20px;
+  height: 23px;
+  width: 23px;
   float: left;
   margin-left: 0px;
 }
@@ -119,15 +107,47 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 15px;
 }
 
+.minmax:hover{
+  background-color: #ccc;
+  width: 60px;
+  height: 40px;
+  padding: 15px;
+  padding-bottom: 11px;
+  margin: 0px;
+}
+
+
+#close:hover{
+  background-color: red;
+  width: 32px;
+  height: 40px;
+  padding: 14px;
+  padding-bottom: 17px;
+  margin: 0px;
+
+}
+
+.minmax:hover{
+  background-color: #ccc;
+}
+#close{
+  height: 20px;
+  width: 25px;
+  font-size: 15px;
+  margin-left: 13px;
+  margin-right: 10px;
+}
+
 .minmax, .time{
   padding-right: 5px;
-  margin-left: 3px;
+  margin-left: 13px;
+  margin-right: 11px;
   margin-bottom: 10px;
   height: 20px;
   width: 25px;
-  font-size: 14px;
-  
+  font-size: 14px;  
 }
+
 /* Finish */
 
 .top-cal{
@@ -298,7 +318,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .twos{
   background-color: rgb(225, 225, 225);
-  height: 158px;
+  height: 138px;
   }
 .threes{
   background-color: rgb(225, 225, 225);
@@ -340,15 +360,24 @@ input[type=number]::-webkit-outer-spin-button {
 .his{
   font-family: 'Segoe UI';
   float: left;
+  height: 20px;
+  margin-top: 15px;
   margin-right: 40px;
-  font-size: 15px;
+  font-size: 18px;
+  padding: 5px 10px;
+  font-weight: bold;
 }
 
-.his:hover{
+#his{
   text-decoration: underline;
-  text-decoration-color: blue;
+  text-decoration-color: red;
 }
 
+#the{
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
 #cust {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
